@@ -86,8 +86,8 @@ button { cursor: pointer; }
   gap: 28px;
 }
 .brand { display: flex; align-items: baseline; gap: 12px; white-space: nowrap; }
-.brand-logo { display: block; height: 19px; width: auto; flex: 0 0 auto; }
-.brand-section { font-size: 15px; letter-spacing: .04em; color: var(--blue); }
+.brand-logo { display: block; height: 15px; width: auto; flex: 0 0 auto; }
+.brand-section { font-size: 18px; letter-spacing: .04em; color: var(--blue); }
 .header-rail { height: 38px; background: #fff; opacity: .92; }
 .header-actions { display: flex; align-items: center; gap: 15px; }
 .icon-button { position: relative; width: 30px; height: 30px; display: grid; place-items: center; }
@@ -314,8 +314,8 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
     flex-wrap: wrap;
     max-width: calc(100vw - 120px);
   }
-  .brand-logo { height: 16px; width: auto; }
-  .brand-section { font-size: 12px; }
+  .brand-logo { height: 10px; width: auto; }
+  .brand-section { font-size: 13px; }
   .header-rail { display: none; }
   .header-actions { gap: 8px; }
   .icon-button { width: 28px; height: 28px; }
