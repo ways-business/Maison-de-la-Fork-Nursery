@@ -38,3 +38,13 @@ v18 header update
 - Desktop logo height matches the former 19px text size.
 - Mobile logo height matches the former 16px text size.
 - NURSERY remains live HTML text beside the logo.
+
+
+v20 header sizing update
+Desktop:
+- .brand-logo height: 15px
+- .brand-section font-size: 18px
+
+Mobile:
+- .brand-logo height: 10px
+- .brand-section font-size: 13px
