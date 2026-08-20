@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="523" height="131" viewBox="0 0 523 131" fill="none">
+
+  <defs>
+    <!-- Soft warm line fades -->
+    <linearGradient id="leftLine" x1="55" y1="0" x2="205" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8C79A" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#E8C79A" stop-opacity=".34"/>
+      <stop offset=".82" stop-color="#E8C79A" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#E8C79A" stop-opacity=".10"/>
+    </linearGradient>
+
+    <linearGradient id="rightLine" x1="343" y1="0" x2="487" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8C79A" stop-opacity=".12"/>
+      <stop offset=".18" stop-color="#E8C79A" stop-opacity=".48"/>
+      <stop offset=".82" stop-color="#E8C79A" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#E8C79A" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Golden star -->
+    <linearGradient id="starGold" x1="253" y1="48" x2="296" y2="98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8D68D"/>
+      <stop offset=".48" stop-color="#F0B85C"/>
+      <stop offset="1" stop-color="#E4A046"/>
+    </linearGradient>
+
+    <radialGradient id="starGlow" cx="0" cy="0" r="1"
+      gradientTransform="translate(274 70) rotate(90) scale(23)"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF4C8" stop-opacity=".95"/>
+      <stop offset=".42" stop-color="#FFE49A" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#FFD06B" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+  </defs>
+
+  <!-- Side lines -->
+  <path d="M55 73.5 C95 73.2 143 73.8 205 73.5"
+        stroke="url(#leftLine)" stroke-width="2"
+        stroke-linecap="round"/>
+
+  <path d="M343 73.5 C391 73.2 439 73.7 487 73.5"
+        stroke="url(#rightLine)" stroke-width="2"
+        stroke-linecap="round"/>
+
+  <!-- Tiny soft accents near the star -->
+  <circle cx="202.5" cy="73.5" r="3.4" fill="#E7B66A" opacity=".18" filter="url(#softGlow)"/>
+  <circle cx="346.0" cy="73.5" r="3.4" fill="#E7B66A" opacity=".18" filter="url(#softGlow)"/>
+
+  <!-- Star -->
+  <polygon points="274.00,43.00 281.64,61.48 301.58,63.04 286.36,76.02 291.05,95.46 274.00,85.00 256.95,95.46 261.64,76.02 246.42,63.04 266.36,61.48"
+           fill="url(#starGold)"
+           stroke="#EDB15D"
+           stroke-width="1.4"
+           stroke-linejoin="round"/>
+
+  <!-- Soft center illumination -->
+  <circle cx="274" cy="70" r="18" fill="url(#starGlow)" filter="url(#softGlow)"/>
+  <circle cx="274" cy="70" r="10" fill="url(#starGlow)" opacity=".8"/>
+</svg>
