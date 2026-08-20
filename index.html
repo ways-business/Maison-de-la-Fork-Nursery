@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8efe2" />
+  <title>Maison de la Fork — Nursery</title>
+  <meta name="description" content="Twelve custom cakes for your baby's first year, designed month by month." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner page-shell">
+      <a class="brand" href="#top" aria-label="Maison de la Fork home">
+        <img class="brand-logo" src="assets/01-header/logo.svg" alt="Maison de la Fork" />
+        <span class="brand-section">NURSERY</span>
+      </a>
+
+      <div class="header-rail" aria-hidden="true"></div>
+
+      <nav class="header-actions" aria-label="Account and cart">
+        <a class="icon-button" href="#signup" aria-label="Account">
+          <img src="assets/01-header/icon-account.svg" alt="" />
+        </a>
+        <a class="icon-button cart-button" href="#signup" aria-label="Shopping bag">
+          <img src="assets/01-header/icon-cart.svg" alt="" />
+          <span class="cart-dot" aria-hidden="true"></span>
+        </a>
+      </nav>
+    </div>
+    <div class="header-divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <div class="hero-collection-stage" id="heroCollectionStage">
+      <picture class="hero-collection-picture">
+        <source media="(max-width: 768px)" srcset="assets/hero-collection-bg-mobile.avif" />
+        <img
+          id="heroCollectionBg"
+          class="hero-collection-bg"
+          src="assets/hero-collection-bg.avif"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </picture>
+
+      <div class="hero-collection-overlay">
+        <section class="hero" aria-labelledby="hero-title">
+          <img
+            class="hero-cakes hero-cakes-left"
+            src="assets/02-hero/hero-cakes-left.webp"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            decoding="async"
+          />
+          <img
+            class="hero-cakes hero-cakes-right"
+            src="assets/02-hero/hero-cakes-right.webp"
+            alt=""
+            aria-hidden="true"
+            loading="eager"
+            decoding="async"
+          />
+
+          <div class="hero-copy">
+            <p class="eyebrow">12 MONTHS, 12 CAKES</p>
+            <h1 id="hero-title">One Sweet<span class="mobile-title-break"> </span>First Year</h1>
+            <p class="hero-description">
+              From the very first month to the very first birthday, we bake a little
+              piece of the story every step of the way — twelve custom cakes, each
+              designed around that month’s theme, colors, or outfit, right up to the
+              big celebration itself.
+            </p>
+            <a class="paint-button" href="#collection">
+              <span class="paint-button-label">Discover the Collection</span>
+              <span class="paint-button-star" aria-hidden="true">★</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="collection" id="collection" aria-labelledby="collection-title">
+          <div class="collection-main-card">
+            <img
+              class="collection-main-art"
+              src="assets/03-collection/collection-main-frame.webp"
+              alt=""
+              aria-hidden="true"
+              loading="eager"
+            />
+
+            <div class="collection-main-copy">
+              <h2 id="collection-title">Twelve Tiny Cakes,<br />One Big Year</h2>
+              <p class="collection-description">
+                A cake for every month of baby’s first year,<br />
+                custom designed around that month’s theme or outfit —<br />
+                all the way through to the birthday celebration itself.
+              </p>
+              <div class="collection-highlight">
+                <strong>6” ROUND · THEME &amp; COLORS</strong>
+                <span>♥ SHARED BY YOU, MONTH TO MONTH ♥</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection-deal-divider" aria-hidden="true"></div>
+        </section>
+      </div>
+    </div>
+
+    <section class="deal" aria-labelledby="deal-title">
+      <div class="deal-inner page-shell">
+        <div class="deal-price-block">
+          <h2 id="deal-title">The Sweet Deal</h2>
+          <div class="deal-price-row">
+            <span class="deal-price">$1,400</span>
+            <div class="deal-saving">
+              <span class="deal-was">Was $1,800</span>
+              <span class="deal-save-badge">Save $400</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="deal-facts" role="list">
+          <article class="fact" role="listitem">
+            <img src="assets/04-deal/icon-payment.webp" alt="" />
+            <p>Payment is due in full to reserve your package.</p>
+          </article>
+          <article class="fact" role="listitem">
+            <img src="assets/04-deal/icon-location.webp" alt="" />
+            <p>Delivery is available and calculated based on your location.</p>
+          </article>
+          <article class="fact" role="listitem">
+            <img src="assets/04-deal/icon-star.webp" alt="" />
+            <p>Share your monthly theme and colors at least 1 week before each cake date.</p>
+          </article>
+          <article class="fact" role="listitem">
+            <img src="assets/04-deal/icon-bow.webp" alt="" />
+            <p>Want to make one month extra special? Any cake in the collection can be upgraded with additional size, tiers, or detail for an additional charge.</p>
+          </article>
+          <article class="fact" role="listitem">
+            <img src="assets/04-deal/icon-calendar.webp" alt="" />
+            <p>For Month 12 — the birthday cake, we’ll need your theme 3 weeks ahead, since it’s the big celebration itself.</p>
+          </article>
+          <article class="fact" role="listitem">
+            <img src="assets/04-deal/icon-heart.webp" alt="" />
+            <p>All twelve cakes are booked together as one sweet package.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup" id="signup" aria-labelledby="signup-title">
+      <div class="signup-top-divider" aria-hidden="true"></div>
+      <div class="signup-inner page-shell">
+        <div class="signup-ornament" aria-hidden="true"><span></span><b>★</b><span></span></div>
+        <h2 id="signup-title">Let’s Get This Started</h2>
+        <p class="signup-subtitle">Tell us a bit about your little one and we'll take it from there.</p>
+
+        <form class="signup-form" id="nurseryForm" novalidate>
+          <div class="form-field">
+            <label for="parentName">Parent Name</label>
+            <div class="input-shell">
+              <img src="assets/05-form/icon-parent.svg" alt="" />
+              <input id="parentName" name="parentName" type="text" autocomplete="name" placeholder="Full name" required />
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="babyName">Baby's Name</label>
+            <div class="input-shell">
+              <img src="assets/05-form/icon-baby.svg" alt="" />
+              <input id="babyName" name="babyName" type="text" placeholder="Baby's name" required />
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <div class="input-shell">
+              <img src="assets/05-form/icon-email.svg" alt="" />
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required />
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <div class="input-shell">
+              <img src="assets/05-form/icon-phone.svg" alt="" />
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(___) ___-____" required />
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="birthdate">Baby's Birthdate</label>
+            <div class="input-shell">
+              <img src="assets/05-form/icon-calendar.svg" alt="" />
+              <input id="birthdate" name="birthdate" type="text" placeholder="So we can map out all twelve cake dates." required />
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="address">Delivery Address / Area</label>
+            <div class="input-shell">
+              <img src="assets/05-form/icon-location.svg" alt="" />
+              <input id="address" name="address" type="text" autocomplete="street-address" placeholder="City or full address" required />
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="notes">Anything Else? <span>(optional)</span></label>
+            <div class="textarea-shell">
+              <img src="assets/05-form/icon-heart.svg" alt="" />
+              <textarea id="notes" name="notes" placeholder="Theme, colors, or anything you'd love us to know."></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit-wrap">
+            <div class="submit-brush" aria-hidden="true"></div>
+            <button class="paint-button form-submit" type="submit">
+              <span class="paint-button-label">Plan My Baby’s Sweet Year</span>
+              <span class="paint-button-star" aria-hidden="true">★</span>
+            </button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-divider" aria-hidden="true"></div>
+    <div class="footer-inner page-shell">
+      <h2 class="footer-brand">Maison De La Fork</h2>
+      <p class="footer-tagline">Cakes &amp; Celebrations · Los Angeles</p>
+      <div class="footer-ornament" aria-hidden="true"><span></span><b>♥</b><span></span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
