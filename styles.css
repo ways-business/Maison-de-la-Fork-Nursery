@@ -204,7 +204,7 @@ button { cursor: pointer; }
   transform: translateX(-50%);
   text-align: center;
 }
-.eyebrow { margin: 0 0 13px; color: #d7962f; font-size: clamp(15px,1.05vw,18px); letter-spacing: .02em; }
+.eyebrow { margin: 0 0 5px; color: #d7962f; font-size: clamp(15px,1.05vw,18px); letter-spacing: .02em; }
 .hero h1 { margin: 0; color: var(--blue); font-size: clamp(48px,4.1vw,68px); line-height: .98; font-weight: 500; letter-spacing: -.02em; }
 .hero-description { width: min(620px,46vw); margin: 16px auto 28px; color: var(--blue-dark); font-size: clamp(17px,1.12vw,20px); line-height: 1.45; }
 
@@ -346,7 +346,7 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
     width: 100%;
     margin: 18px auto 24px;
     font-size: clamp(15px, 4vw, 22px);
-    line-height: 1.42;
+    line-height: 1.12;
   }
   .paint-button {
     min-width: 250px;
@@ -533,7 +533,7 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
     width: min(320px, 77vw);
     margin: 17px auto 22px;
     font-size: clamp(14px, 3.25vw, 16px);
-    line-height: 1.42;
+    line-height: 1.12;
   }
 
   .hero .paint-button {
@@ -749,5 +749,244 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
   .fact img {
     width: 37px;
     height: 37px;
+  }
+}
+
+/* V21 header search + CTA refinement */
+.header-icons {
+  gap: 14px;
+}
+
+.header-search {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-search svg {
+  width: 22px;
+  height: 22px;
+  stroke: #526f9f;
+  stroke-width: 1.7;
+  fill: none;
+}
+
+@media (max-width:768px){
+  .header-search svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.btn,
+.hero-button,
+.form-button,
+.cta-button {
+  background: linear-gradient(180deg,#e2ae57,#d99c3e);
+  color:#fffaf0;
+  border:1px solid rgba(189,132,42,.45);
+  border-radius:999px;
+  box-shadow:0 8px 18px rgba(197,145,59,.18),
+             inset 0 1px 1px rgba(255,255,255,.35);
+}
+
+
+/* Magical CTA + header refinements */
+.header-actions { gap: 18px; }
+.icon-button { width: 34px; height: 34px; }
+.icon-button img { width: 25px; height: 25px; }
+.header-search-icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+}
+
+/* Storybook magical buttons */
+.paint-button,
+.form-submit {
+  background: linear-gradient(180deg, #e7c16f 0%, #d9a84e 100%);
+  border-color: rgba(255,248,225,.8);
+  box-shadow:
+    0 5px 0 rgba(166,119,46,.25),
+    0 12px 28px rgba(190,145,60,.22),
+    inset 0 1px 4px rgba(255,255,255,.55);
+}
+.paint-button::after,
+.form-submit::after {
+  content:"";
+  position:absolute;
+  inset:4px;
+  border-radius:inherit;
+  border:1px solid rgba(255,245,215,.45);
+}
+.paint-button-label {
+  color:#fff8e8;
+}
+.paint-button-star {
+  animation: sparkleStar 2.4s infinite ease-in-out;
+}
+@keyframes sparkleStar {
+  0%,100% { transform:scale(1); opacity:.85; }
+  50% { transform:scale(1.18); opacity:1; }
+}
+
+/* Keep small text readable */
+.hero-description,
+.collection-description,
+.fact p,
+.signup-subtitle,
+.form-field input,
+.form-field textarea {
+  font-family:"KoHo", Arial, sans-serif;
+}
+
+
+/* Final CTA refinement */
+.paint-button,
+.form-submit {
+  border: none !important;
+  box-shadow:
+    0 5px 0 rgba(166,119,46,.22),
+    0 12px 28px rgba(190,145,60,.18),
+    inset 0 1px 4px rgba(255,255,255,.25);
+}
+
+.paint-button-label,
+.form-submit {
+  font-family: "KoHo", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: .03em;
+}
+
+.icon-button img {
+  width: 26px;
+  height: 26px;
+}
+
+
+/* Final button + search fixes */
+.header-search img,
+.icon-button img[src*="icon-search"] {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width:768px){
+  .header-search img,
+  .icon-button img[src*="icon-search"] {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.paint-button,
+.form-submit {
+  background: linear-gradient(
+    180deg,
+    #d7a24f 0%,
+    #c58d38 100%
+  );
+}
+
+.paint-button-label {
+  text-transform: capitalize !important;
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+
+
+/* Maison Nursery hero eyebrow */
+.eyebrow-brand { margin-bottom: 6px; letter-spacing: .12em; font-weight: 100; }
+@media (max-width:768px){ .eyebrow-brand { margin-bottom: 5px; } }
+
+
+/* Hero eyebrow hierarchy refinement */
+.hero .brand-eyebrow {
+  font-size: clamp(13px, 0.9vw, 15px);
+  font-weight: 100;
+  letter-spacing: .12em;
+}
+
+.hero .eyebrow {
+  font-size: clamp(16px, 1.1vw, 19px);
+  font-weight: 100;
+  letter-spacing: .06em;
+}
+
+@media (max-width:768px) {
+  .hero .brand-eyebrow {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .hero .eyebrow {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+
+/* V6 Hero eyebrow separate hierarchy */
+.hero-brand-eyebrow {
+  font-family: "KoHo", sans-serif;
+  font-size: clamp(12px, .85vw, 15px) !important;
+  font-weight: 400 !important;
+  letter-spacing: .14em;
+  margin-bottom: 10px;
+}
+
+.hero-main-eyebrow {
+  font-family: "KoHo", sans-serif;
+  font-size: clamp(17px, 1.15vw, 20px) !important;
+  font-weight: 700 !important;
+  letter-spacing: .06em;
+}
+
+@media (max-width:768px) {
+  .hero-brand-eyebrow {
+    font-size: 13px !important;
+  }
+
+  .hero-main-eyebrow {
+    font-size: 17px !important;
+  }
+}
+
+.header-actions .icon-button img[src*="icon-search"] {
+  display: block;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+
+/* Hero main eyebrow refinement */
+.mobile-eyebrow-break {
+  display: none;
+}
+
+.hero-main-eyebrow {
+  font-size: clamp(20px, 1.35vw, 24px) !important;
+  font-weight: 700 !important;
+  letter-spacing: .07em;
+  line-height: 1.15;
+}
+
+@media (max-width:768px) {
+  .mobile-eyebrow-break {
+    display: block;
+  }
+
+  .hero-main-eyebrow {
+    font-size: clamp(19px, 5vw, 23px) !important;
+    line-height: 1.15;
   }
 }
