@@ -1,50 +1,39 @@
-MDLF Nursery Web Code — v15
+# MDLF Nursery Page — Deployment Notes
 
-Mobile refinements added from the latest screenshots:
-- Hero title is forced into exactly two lines on mobile: "One Sweet" / "First Year".
-- Hero small text is reduced for better proportion.
-- Hero cake groups are significantly larger on mobile.
-- Collection main artwork is enlarged to bleed past both viewport edges.
-- Collection title/body/highlight typography is reduced and re-spaced.
-- Desktop rules from v14 remain unchanged.
+This package is a static front-end page built with **HTML, CSS, and JavaScript**.
 
-Required merged backgrounds:
-- Desktop: assets/hero-collection-bg.avif
-- Mobile: assets/hero-collection-bg-mobile.avif
+## Deployment
 
-Main mobile tuning block is at the end of styles.css under:
-"MOBILE HERO + COLLECTION REFINEMENT — v15"
+1. Upload the complete package to the server without changing the folder structure.
+2. Keep `index.html`, `styles.css`, `script.js`, and the `assets/` folder together.
+3. The page entry file is `index.html`.
+4. All images, SVG files, AVIF/WebP backgrounds, and fonts are loaded with relative paths from the `assets/` folder.
+5. No build process, npm, or framework is required.
 
+## Important
 
-V16 mobile tuning:
-- .hero-copy top: 27.2%
-- .hero-description width: min(320px, 77vw)
-- .hero-cakes width: 58%; bottom: 2.8%
-- .collection-main-card top: 16.5%; width: 150%; centered with left:50% + translateX(-50%)
-- .collection-main-copy padding-top: 19.5%
-- collection art fills the 150% centered card at width:100%
+- Please make sure the server supports **AVIF** and **WebP** files with the correct MIME types.
+- Do not rename or move asset files unless their paths are also updated in the HTML/CSS.
+- The layout includes both **desktop and mobile responsive versions**.
+- Please test the page on both desktop and mobile after deployment.
 
+## Registration Form
 
-v17 mobile changes
-- Hero cakes: width 48%, bottom 2.8%.
-- Collection main card: width 140%, centered with left:50% + translateX(-50%).
-- Collection copy padding-top: 16.5%.
-- Sweet Deal mobile price area redesigned as a centered celebratory composition.
-- Mobile deal content gutters increased.
+The registration form currently includes **front-end validation only**.
 
+It is **not yet connected** to:
+- Email
+- Database
+- CRM
+- Backend endpoint
 
-v18 header update
-- Replaced the "Maison de la Fork" text with assets/01-header/logo.svg.
-- Desktop logo height matches the former 19px text size.
-- Mobile logo height matches the former 16px text size.
-- NURSERY remains live HTML text beside the logo.
+Please connect the form submission to the website's preferred backend solution if required.
 
+## Main Files
 
-v20 header sizing update
-Desktop:
-- .brand-logo height: 15px
-- .brand-section font-size: 18px
-
-Mobile:
-- .brand-logo height: 10px
-- .brand-section font-size: 13px
+```text
+index.html
+styles.css
+script.js
+assets/
+```
