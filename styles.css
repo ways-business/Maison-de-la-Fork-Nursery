@@ -513,7 +513,7 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
   }
 
   .hero-copy {
-    top: 27.2%;
+    top: 33.2%;
     width: min(380px, 78vw);
   }
 
@@ -537,6 +537,7 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
   }
 
   .hero .paint-button {
+    display: none;
     min-width: 202px;
     height: 43px;
     padding-inline: 18px;
@@ -576,7 +577,7 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
   }
 
   .collection-main-copy {
-    padding-top: 16.5%;
+    padding-top: 14.5%;
     padding-inline: 12%;
   }
 
@@ -1040,5 +1041,23 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
 
   .paint-button-star {
     font-size: 13px;
+  }
+}
+
+/* Mobile: restore a standard size for the sign-up form button only.
+   Scoped to .signup .form-submit (specificity 0,2,0) so it always wins
+   over the generic .paint-button mobile rule above, without touching
+   the hero button (.hero .paint-button) at all. */
+@media (max-width: 768px) {
+  .signup .form-submit {
+    min-width: 280px;
+    height: 58px;
+    padding-inline: 32px;
+    gap: 14px;
+    font-size: 16px;
+    border-radius: 22px;
+  }
+  .signup .form-submit .paint-button-star {
+    font-size: 18px;
   }
 }
