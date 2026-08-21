@@ -531,21 +531,21 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
 
   .hero-description {
     width: min(320px, 77vw);
-    margin: 17px auto 22px;
+    margin: 17px auto 17px;
     font-size: clamp(14px, 3.25vw, 16px);
     line-height: 1.12;
   }
 
   .hero .paint-button {
-    min-width: 238px;
-    height: 50px;
-    padding-inline: 21px;
-    font-size: 14px;
-    gap: 10px;
+    min-width: 202px;
+    height: 43px;
+    padding-inline: 18px;
+    font-size: 12px;
+    gap: 9px;
   }
 
   .hero .paint-button-star {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   /* HERO CAKES — user-tuned mobile size and vertical placement */
@@ -982,11 +982,63 @@ input::placeholder,textarea::placeholder { color: #8e7d69; opacity: .95; }
 
 @media (max-width:768px) {
   .mobile-eyebrow-break {
-    display: block;
+    display: none;
   }
 
   .hero-main-eyebrow {
-    font-size: clamp(19px, 5vw, 23px) !important;
-    line-height: 1.15;
+    font-size: clamp(15px, 4vw, 18px) !important;
+    line-height: 1.1;
+    letter-spacing: .04em;
+    white-space: nowrap;
+  }
+}
+
+
+/* FINAL HEADER + MOBILE BUTTON REFINEMENT */
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  justify-content: center;
+}
+
+.header-actions {
+  position: static;
+  width: 0;
+  height: 0;
+}
+
+.header-actions .icon-button {
+  display: none;
+}
+
+/* Keep header-hero-divider untouched */
+
+@media (max-width: 768px) {
+  .header-inner {
+    justify-content: center;
+  }
+
+  .brand {
+    justify-content: center;
+    gap: 8px;
+    max-width: none;
+    flex-wrap: nowrap;
+  }
+
+  .paint-button {
+    min-width: 160px;
+    height: 35px;
+    padding-inline: 14px;
+    gap: 7px;
+    font-size: 11px;
+    border-radius: 16px;
+  }
+
+  .paint-button-star {
+    font-size: 13px;
   }
 }
